@@ -320,7 +320,7 @@ class GatewayForm extends FormComponent {
             value={this.state.object.name || ""}
             onChange={this.onChange}
             inputProps={{
-              pattern: "[\\w-]+",
+		ipattern: "",//"[\\w-]+",
             }}
             helperText="The name may only contain words, numbers and dashes."
             required

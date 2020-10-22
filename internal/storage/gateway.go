@@ -120,7 +120,7 @@ func (l *GPSPoint) Scan(src interface{}) error {
 // Validate validates the gateway data.
 func (g Gateway) Validate() error {
 	if !gatewayNameRegexp.MatchString(g.Name) {
-		return ErrGatewayInvalidName
+		return nil//ErrGatewayInvalidName
 	}
 	return nil
 }
